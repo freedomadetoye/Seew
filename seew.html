@@ -1,0 +1,138 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seew is a search engine for e-commerce websites. Discover platforms to shop smarter." />
+  <title>Seew – Search Engine for E-commerce</title>  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">  <style>
+    :root {
+      --navy: #0b1d3a;
+      --army: #4b5d2a;
+      --light: #f4f6f8;
+      --text: #1f2937;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 { font-size: 1.5rem; letter-spacing: 1px; }
+
+    nav ul { list-style: none; display: flex; gap: 1rem; }
+    nav a { color: #fff; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+
+    main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+    section { animation: fadeIn 0.4s ease-in-out; }
+
+    h2 { color: var(--navy); margin-bottom: 1rem; }
+
+    article {
+      background: #fff;
+      padding: 1.2rem;
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    article h3 a { color: var(--army); text-decoration: none; }
+    article h3 a:hover { text-decoration: underline; }
+    article p { margin: 0.5rem 0; }
+
+    aside {
+      background: linear-gradient(135deg, var(--army), var(--navy));
+      color: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+    }
+
+    aside a {
+      display: inline-block;
+      margin-top: 0.8rem;
+      background: #fff;
+      color: var(--navy);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+      background: var(--navy);
+      color: #fff;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style></head>
+<body><header>
+  <h1>Seew</h1>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="openHomepage()">Home</a></li>
+      <li><a href="#" onclick="openAboutpage()">About</a></li>
+    </ul>
+  </nav>
+</header><main>
+  <section id="home">
+    <h2>E-commerce Platforms</h2><article><h3><a href="https://www.amazon.com" target="_blank">Amazon</a></h3><p>Global marketplace for physical and digital products.</p></article>
+<article><h3><a href="https://www.jumia.com" target="_blank">Jumia</a></h3><p>Africa-focused e-commerce for everyday products.</p></article>
+<article><h3><a href="https://www.aliexpress.com" target="_blank">AliExpress</a></h3><p>Affordable products shipped worldwide.</p></article>
+<article><h3><a href="https://www.ebay.com" target="_blank">eBay</a></h3><p>Auctions and fixed-price global marketplace.</p></article>
+<article><h3><a href="https://www.konga.com" target="_blank">Konga</a></h3><p>Nigerian e-commerce platform for electronics and more.</p></article>
+<article><h3><a href="https://www.etsy.com" target="_blank">Etsy</a></h3><p>Handmade, vintage, and creative products.</p></article>
+<article><h3><a href="https://www.walmart.com" target="_blank">Walmart</a></h3><p>Retail giant offering online shopping.</p></article>
+<article><h3><a href="https://www.shopify.com" target="_blank">Shopify</a></h3><p>Platform hosting millions of online stores.</p></article>
+<article><h3><a href="https://www.bestbuy.com" target="_blank">Best Buy</a></h3><p>Electronics-focused online retailer.</p></article>
+<article><h3><a href="https://www.payporte.com" target="_blank">PayPorte</a></h3><p>Nigerian fashion and lifestyle store.</p></article>
+
+<aside>
+  <p><strong>Partner Promotion</strong></p>
+  <p>Join OPay to save, pay, and shop online directly from your app.</p>
+  <a href="https://opay.ng/s/2U3fw" target="_blank">Get Started with OPay</a>
+</aside>
+
+  </section>  <section id="about" style="display:none">
+    <h2>About Seew</h2>
+    <p><strong>Seew</strong> is a search engine for discovering trusted e-commerce websites.</p>
+    <p>Future updates will include product search, categories, and price comparison.</p>
+  </section>
+</main><footer>
+  <p>© 2026 Seew. All rights reserved.</p>
+</footer><script>
+  const home = document.getElementById('home');
+  const about = document.getElementById('about');
+
+  function openHomepage() {
+    home.style.display = 'block';
+    about.style.display = 'none';
+  }
+
+  function openAboutpage() {
+    about.style.display = 'block';
+    home.style.display = 'none';
+  }
+
+  window.addEventListener('load', openHomepage);
+</script></body>
+</html>
